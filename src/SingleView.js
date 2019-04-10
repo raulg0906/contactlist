@@ -13,7 +13,7 @@ class SingleView extends Component {
   }
   componentDidMount(){
       const user = data.find(
-          person => person.id === this.props.match.params.id
+          person => person.id == this.props.match.params.id
       );
       this.setState({
           name: user.name.first,
